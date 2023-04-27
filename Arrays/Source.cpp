@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 
@@ -9,16 +9,15 @@ void main()
 	int arr[SIZE];
 	for (int i = 0; i < SIZE; i++) 
 	{
-		cout << "Ââåäèòå ÷èñëî ìàññèâà ïîä èíäåêñîì " << i << ": ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð¿Ð¾Ð´ Ð¸Ð½Ð´ÐµÐºÑÐ¾Ð¼ " << i << ": ";
 		cin>>arr[i];
-		cout << endl;
 	}
-	cout << "Âûâîä â ïîðÿäêå âîçðàñòàíèÿ: " << endl;
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ð² Ð¿Ð¾Ñ€ÑÐ´ÐºÐµ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸Ñ: " << endl;
 	for (int i = 0; i < SIZE; i++)
 	{
 		cout << "arr[" << i << "] = " << arr[i] << endl;
 	}
-	cout << "Âûâîä â ïîðÿäêå óáûâàíèÿ " << endl;
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ð² Ð¿Ð¾Ñ€ÑÐ´ÐºÐµ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸Ñ " << endl;
 	for (int i = SIZE-1; i >= 0; i--)
 	{
 		cout << "arr[" << i << "] = " << arr[i] << endl;
@@ -29,10 +28,10 @@ void main()
 	{
 		sum += arr[i];
 	}
-	cout << "Ñóììà = " << sum << endl;;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° = " << sum << endl;;
 
 	double sredArifm = (double)sum / SIZE;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå = " << sredArifm << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ = " << sredArifm << endl;
 
 	int min = arr[0];
 	for (int i =1;i<SIZE;i++) 
@@ -42,7 +41,7 @@ void main()
 			min = arr[i];
 		}
 	}
-	cout << "Ìèíèìàëüíîå = " << min << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ = " << min << endl;
 
 	int max = arr[0];
 	for (int i =1;i<SIZE;i++) 
@@ -52,5 +51,5 @@ void main()
 			max = arr[i];
 		}
 	}
-	cout << "Ìàêñèìàëüíîå = "<<max<<endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ = "<<max<<endl;
 }
