@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include <time.h>
 
 using namespace std;
@@ -12,8 +12,8 @@ void main()
 	int minRand;
 	int maxRand;
 	
-	cout << "ââåäèòå ìèíèìàëüíûé äèàïàçîí ÷èñåë: "; cin >> minRand;
-	cout << "ââåäèòå ìàêñèìàëüíûé äèàïàçîí ÷èñåë: "; cin >> maxRand;
+	cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½ Ñ‡Ð¸ÑÐµÐ»: "; cin >> minRand;
+	cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½ Ñ‡Ð¸ÑÐµÐ»: "; cin >> maxRand;
 	for (int i =0;i<n;i++) 
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
@@ -47,5 +47,5 @@ void main()
 	}
 	clock_t end = clock();
 	double sec = (double)(end - start) / CLOCKS_PER_SEC;
-	cout << endl << "âðåìÿ: "  <<sec << "c.";
+	cout << endl << "Ð²Ñ€ÐµÐ¼Ñ: "  <<sec << "c.";
 }
