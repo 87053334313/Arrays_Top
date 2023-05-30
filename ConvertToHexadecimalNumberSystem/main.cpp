@@ -70,7 +70,7 @@ void main()
 	}
 	else 
 	{
-		count_balance = 0;
+		i_ostatok = 0;
 	}
 	int K = count_number_4 + i_ostatok;
 	//cout<<endl << K<<endl;
